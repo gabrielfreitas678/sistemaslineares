@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Resolução se sitemas lineares</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <ul>
+            <li><img src="./assets/logo.svg" alt="Logo do site" /></li>
+            <li>
+              <div class="input">
+                <div class="before">
+                  <p>i <sub>t</sub></p>
+                </div>
+                <input
+                  class="qtdVariaveis"
+                  placeholder="Quantas variaveis o sitema possui?"
+                  type="text"
+                />
+                <div class="after">
+                  <button class="generateEmptyTable">
+                    <img src="./assets/arrow.svg" alt="Logo do site" />
+                  </button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="matriz">
+          <div class="table">
+            <table>
+              <thead></thead>
+              <tbody></tbody>
+            </table>
+
+            <table>
+              <thead></thead>
+              <tbody class="tbody2"></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="results">
+          <ul></ul>
+        </div>
+      </main>
+      <footer>
+        <button class="generateMatriz">Calcular</button>
+        <button class="novaMatriz">Novo sistema</button>
+      </footer>
+    </div>
+    <script src="index.js"></script>
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-app.js"
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-analytics.js"
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyD4P60EN43LOermmXkXhzNT4JtCghqHBEs",
+        authDomain: "sistemaslineares-7b2cf.firebaseapp.com",
+        projectId: "sistemaslineares-7b2cf",
+        storageBucket: "sistemaslineares-7b2cf.appspot.com",
+        messagingSenderId: "748517996676",
+        appId: "1:748517996676:web:333cbbded28ca45df96ad1",
+        measurementId: "G-M3M33PF78X",
+      }
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig)
+      const analytics = getAnalytics(app)
+    </script>
+  </body>
+</html>

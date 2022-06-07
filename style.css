@@ -1,0 +1,225 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Patrick Hand', cursive; */
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container header {
+  padding: 6px;
+  /* height: 10vh; */
+  background-color: #3A8C75;
+}
+
+
+
+nav {
+  padding: 4px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input {
+  display: flex;
+
+  width: 550px;
+  /* max-width: 550px; */
+  height: 30px;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  border-radius: 2px;
+  margin: 2px;
+
+
+}
+
+input {
+  display: flex;
+  width: 86%;
+  border: none;
+  border-left: 4px solid #3A8C75;
+  border-right: 4px solid #3A8C75;
+  text-align: center;
+
+  height: 30px;
+  /* background-color: blue; */
+
+}
+
+input::placeholder {
+  letter-spacing: 2px;
+}
+
+
+
+
+.input .before,
+.after {
+  color: #3A8C75;
+  width: 7%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.after {
+  cursor: pointer;
+}
+
+.after img {
+
+  width: auto;
+  height: 70%;
+}
+
+.after button {
+
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  background-color: #fbfbfb;
+  height: 88vh;
+  overflow: auto;
+}
+
+.matriz {
+
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer button {
+
+  height: 35px;
+  margin: 8px;
+  width: 140px;
+  border-radius: 4px;
+  background-color: #fff;
+  border: #3A8C75 solid 2px;
+  color: #3A8C75;
+  font-weight: 800;
+
+}
+
+.table,
+.values {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputs,
+.values input {
+  margin: 2px;
+  background-color: #d9d9d9;
+  border: none;
+  border-radius: 2px;
+
+}
+
+.values input:focus,
+.inputs:focus {
+  outline: #3A8C75 solid 2px;
+
+
+}
+
+.values p {
+  margin: 4px;
+}
+
+
+footer {
+  background-color: #3A8C75;
+  /* height: 2vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+.results {
+  height: 100%;
+  display: none;
+
+
+  align-items: center;
+  justify-content: center;
+
+}
+
+.results ul {
+  /* background-color: #555; */
+  list-style: none;
+  padding: 15px;
+  margin: 10px;
+
+}
+
+.results li {
+  font-weight: 800;
+  border: #3A8C75 solid 2px;
+  padding: 10px;
+  margin: 10px;
+  flex-wrap: wrap;
+  letter-spacing: 2px;
+}
+
+.novaMatriz {
+  display: none;
+
+}
+
+.hideDisplay {
+  display: none;
+}
+
+.showDisplay {
+  display: inline;
+}
+
+@media (max-width: 900px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  .input {
+    max-width: 400px;
+  }
+}
